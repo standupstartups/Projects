@@ -81,7 +81,7 @@ header {
 
 .top-contact a {
   margin-left: 0.5rem;
-  color: #000;
+  color: #ffffff;
   font-size: 0.875rem;
   text-decoration: none;
 }
@@ -149,14 +149,14 @@ header {
   border-color: #505050!important;
 }
  .bg-dark{
-  background-color: #000 !important;
+  background-color: #fff !important;
 }
 .bg-light {
   background-color: #353535 !important;
 }
 
 .nav-link {
-  color: #fff !important;
+  color: #141414 !important;
 }
 
 .navbar .active .nav-link {
@@ -1163,4 +1163,8 @@ color: #d93438
   .owner{
   font-size: 30px;
   color: #d93438;
+  }
+
+  .navbar-light .navbar-toggler-icon{
+    background-color: #fff;
   }
