@@ -8652,3 +8652,19 @@ body.visible-menu-bar .fullscreen-menu{
 	padding-top:80px;
 	padding-bottom:160px;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
