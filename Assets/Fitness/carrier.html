@@ -50,9 +50,9 @@
 
 								<!-- Header Social Box -->
 								<div class="header-social-box clearfix">
+									<a href="https://www.instagram.com/tigerjais.fitness/" target="_blank" class="fa fa-instagram"></a>
 									<a href="#" class="fa fa-facebook"></a>
 									<a href="#" class="fa fa-twitter"></a>
-									<a href="#" class="fa fa-instagram"></a>
 									<a href="#" class="fa fa-linkedin"></a>
 								</div>
 
@@ -168,12 +168,27 @@
 					</section>
 					<!--End Page Title-->
 
+					<section>
+					<div class="comment-form text-center">
+						<div class="group-title"><h3>REQUIRED DOCUMENTS</h3></div>
+						<div class="form-text">Please carry following documents while coming for interview:
+							<ul class="info-list">
+								<li>PAN Card</li>
+								<li>Adhar Card</li>
+								<li>Photograph (passport size)</li>
+								<li>Qualification Certificates (Min. 10th Pass)</li>
+								<li>INR 500 For security deposit</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
 				<section>
 					<div class="comment-form text-center">
 						<div class="group-title"><h3>APPLY FOR A JOB</h3></div>
 						<div class="form-text">If you need of a Personal Trainer, Fitness Instructor advice, or a job, <br> please feel free to contact us</div>
 						<!--Comment Form-->
-						<form id="frmSubmit" method="post">
+						<form id="frmSubmit" method="post" enctype="multipart/form-data">
 							<div class="row clearfix">
 
 								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -181,11 +196,23 @@
 								</div>
 
 								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+									<input type="text" name="Contact-No" placeholder="Contact-No" required>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
 									<input type="email" name="Email" placeholder="Email" required>
 								</div>
 
-								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-									<input type="text" name="Contact-No" placeholder="Contact-No" required>
+								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+									<input type="text" name="State" placeholder="State" required>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+									<input type="text" name="Country" placeholder="Country" required>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+									<input type="file" name="Resume" placeholder="Resume" required>
 								</div>
 
 								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -201,20 +228,6 @@
 
 							</div>
 						</form>
-					</div>
-				</section>
-
-				<section>
-					<div class="comment-form text-center">
-						<div class="group-title"><h3>REQUIRED DOCUMENTS</h3></div>
-						<div class="form-text">Please carry following documents while coming for interview:
-							<ul class="info-list">
-								<li>PAN Card</li>
-								<li>Adhar Card</li>
-								<li>Photograph (passport size)</li>
-								<li>Qualification Certificates (Min. 10th Pass)</li>
-							</ul>
-						</div>
 					</div>
 				</section>
 
@@ -340,7 +353,7 @@
 							jQuery('#msg').html('Please wait...');
 							jQuery('#btnSubmit').attr('disabled',true);
 							jQuery.ajax({
-								url:'https://script.google.com/macros/s/AKfycby9gqTcjt5mGKqmjAaKopcyNHnMUe_RH6JPmVyN5-BfLrwNwYERF0P_4MWfrr3za_Fq/exec',
+								url:'https://script.google.com/macros/s/AKfycby6ePPHUjSdGLUFrBZaflb3Sv40D51hhcxs5cD-oEsuOEhm0s4xMyTq5MjsCD03Ffth2w/exec',
 								type:'post',
 								data:jQuery('#frmSubmit').serialize(),
 								success:function(result){
